@@ -45,7 +45,7 @@ stack_root = Script.get_stack_root()
 tmp_dir = Script.get_tmp_dir()
 
 
-download_url = config['configurations']['druid-env']['download_url']
+download_url = 'http://apache-mirror.rbc.ru/pub/apache/druid/0.20.0/apache-druid-0.20.0-bin.tar.gz'
 filename = download_url.split('/')[-1]
 version_dir = filename.replace('.tar.gz', '').replace('.tgz', '').replace('-bin', '')
 install_dir = stack_root + '/' + version_dir
