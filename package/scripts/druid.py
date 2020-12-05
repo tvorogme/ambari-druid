@@ -65,7 +65,7 @@ def install_druid():
               group=params.user_group,
               mode=0775,
               create_parents=True)
-
+    print(params.download_url, params.version_dir, Script.get_stack_root() + '/' + params.version_dir, params.install_dir)
     if not os.path.exists(Script.get_stack_root() + '/' + params.version_dir) or not os.path.exists(
             params.install_dir):
         #Execute('rm -rf %s' % Script.get_stack_root() + '/' + params.version_dir)
