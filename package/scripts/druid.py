@@ -74,7 +74,7 @@ def install_druid():
             'wget ' + params.download_url + ' -O /tmp/' + params.filename,
             user=params.druid_user)
         Execute('tar -zxf /tmp/' + params.filename + ' -C  ' + Script.get_stack_root())
-        #Execute('rm -rf ' + params.install_dir + '/conf/druid')
+        Execute('rm -rf ' + params.install_dir + '/conf/druid')
         Execute('ln -s ' + params.druid_conf_dir + ' ' + params.install_dir +
                 '/conf/druid')
         Execute("echo 'export PATH=%s/bin:$PATH'>/etc/profile.d/druid.sh" %
