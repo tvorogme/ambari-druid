@@ -28,7 +28,7 @@
     </property>
     <property require-input="true">
         <name>extensions_download</name>
-        <value>ambari-metrics-emitter.tar.gz,druid-parquet-extensions.tar.gz,druid-s3-extensions.tar.gz,druid-redis-cache.tar.gz,druid-caffeine-cache.tar.gz,druid-distinctcount.tar.gz</value>
+        <value></value>
         <description>the extension list to download</description>
     </property>
 
