@@ -1,0 +1,13 @@
+{
+  "Clusters": {
+    "desired_configs": {
+      "service_config_version_note": "", 
+      "tag": "version1573659191990444", 
+      "type": "druid-coordinator", 
+      "properties": {
+        "druid.service": "druid/coordinator", 
+        "druid.port": "8081"
+      }
+    }
+  }
+}
